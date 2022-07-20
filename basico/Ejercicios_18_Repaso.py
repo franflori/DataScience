@@ -7,10 +7,21 @@
     pero hacerla nosotros mismos es un muy buen ejercicio).
 """
 
-def max():
-    pass
+
+def maximo(n1, n2):
+    if n1 < n2:
+        print(f"El valor máximo es {n2}")
+        return n2
+    elif n2 < n1:
+        print(f"El valor máximo es {n1}")
+        return n1
+    else:
+        return "son iguales"
+
+print(maximo(8, 5))
 
 # EJERCICIO 2
+
 
 """
     Definir una función max_de_tres(), 
@@ -18,8 +29,11 @@ def max():
     devuelva el mayor de ellos.
 """
 
+
 def max_de_tres():
     pass
+
+print(max_de_tres())
 
 # EJERCICIO 3
 
