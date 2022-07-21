@@ -1,3 +1,8 @@
+# 10 minutos de descanso
+# 30 minutos ejercicios!!
+
+# VOLVEMOS 11:35 !!!
+
 # EJERCICIO 1
 
 """
@@ -20,8 +25,8 @@ def maximo(n1, n2):
 
 print(maximo(8, 5))
 
-# EJERCICIO 2
 
+# EJERCICIO 2
 
 """
     Definir una función max_de_tres(),
@@ -44,15 +49,17 @@ print(max_de_tres())
     pero escribirla por nosotros mismos resulta un muy buen ejercicio.
 """
 
+
 def longitud():
     pass
 
 # EJERCICIO 4
 
+
 """
     Escribir una función que tome un carácter y devuelva True si es una vocal,
     de lo contrario devuelve False.
-"""_
+"""
 
 def es_vocal():
     pass
@@ -64,6 +71,7 @@ def es_vocal():
     respectivamente todos los números de una lista.
     Por ejemplo: sum([1,2,3,4]) debería devolver 10 y multip([1,2,3,4]) debería devolver 24.
 """
+
 def suma():
     pass
 
