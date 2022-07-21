@@ -1,7 +1,3 @@
-# 10 minutos de descanso
-# 30 minutos ejercicios!!
-
-# VOLVEMOS 11:35 !!!
 
 # EJERCICIO 1
 
@@ -35,10 +31,17 @@ print(maximo(8, 5))
 """
 
 
-def max_de_tres():
-    pass
+def max_de_tres(n1, n2, n3):
+    if n1 > n2 and n1 > n3:
+        return n1
+    elif n2 > n1 and n2 > n3:
+        return n2
+    elif n3 > n1 and n3 > n2:
+        return n3
+    else:
+        return "Son iguales"
 
-print(max_de_tres())
+print(max_de_tres(8, 5, 9))
 
 # EJERCICIO 3
 
@@ -50,8 +53,15 @@ print(max_de_tres())
 """
 
 
-def longitud():
-    pass
+def largo_cadena(lista):
+    cont = 0
+    for i in lista:
+        cont += 1
+    return cont
+
+print(largo_cadena("hola mundo"))
+print(largo_cadena([25, 30]))
+print("len: ", len([25, 30]))
 
 # EJERCICIO 4
 
@@ -61,22 +71,38 @@ def longitud():
     de lo contrario devuelve False.
 """
 
-def es_vocal():
-    pass
+def es_vocal(x):
+    if x == "a" or x == "e" or x == "i" or x == "o" or x == "u":
+        return True
+    elif x == "A" or x == "E" or x == "I" or x == "O" or x == "U":
+        return True
+    else:
+        return False
+
+print("Es vocal: ", es_vocal("a"))
+print("Es consonante: ", es_vocal("b"))
 
 # EJERCICIO 5
 
 """
     Escribir una función suma() y una función multip() que sumen y multipliquen
     respectivamente todos los números de una lista.
-    Por ejemplo: sum([1,2,3,4]) debería devolver 10 y multip([1,2,3,4]) debería devolver 24.
+    Por ejemplo: suma([1,2,3,4]) debería devolver 10 y multip([1,2,3,4]) debería devolver 24.
 """
+def suma(lista):
+    suma = 0
+    for i in lista:
+        suma += i
+    return suma
 
-def suma():
-    pass
+   
+def multip(lista):
+    multiplicacion = 1
+    for i in lista:
+        multiplicacion *= i
+    return multiplicacion
 
-def multip():
-    pass
-
+print("suma: ", suma([8, 5]))
+print("multiplicacion: ", multip([8, 5]))
 
 print("Enhorabuena acabaste los ejercicios")
