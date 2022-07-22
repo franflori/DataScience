@@ -75,5 +75,19 @@ es_palindromo("radar")
     aninado.
 """
 
-def superposicion():
-    pass
+def superposicion (lista1, lista2):
+    for i in lista1:
+        for x in lista2:
+            if i == x:
+                return True
+    return False
+
+lista1 = [1, 2, 3]
+lista2 = [1, 4, 8]
+
+print("Resultado superposicion 1: ", superposicion(lista1, lista2))
+
+lista1 = [0, 2, 3]
+lista2 = [1, 4, 8]
+
+print("Resultado superposicion 2: ", superposicion(lista1, lista2))
